@@ -1,3 +1,6 @@
+/*
+main cli entry
+*/
 package main
 
 import (
