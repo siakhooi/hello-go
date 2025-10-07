@@ -16,7 +16,7 @@ jobs:
       - uses: golangci/golangci-lint-action@v8
         with:
           version: 'latest'
-          args: run --timeout 5m
+          args: --timeout 5m
       - uses: goreleaser/goreleaser-action@v6
         with:
           version: latest
