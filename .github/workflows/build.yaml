@@ -26,3 +26,7 @@ jobs:
         with:
           version: latest
           args: build --snapshot --clean
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@v6
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
