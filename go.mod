@@ -1,3 +1,3 @@
 module github.com/siakhooi/hello-go
 
-go 1.25.1
+go 1.24
