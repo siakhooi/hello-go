@@ -46,4 +46,6 @@ goreleaser-release:
 
 
 binrun:
-	./bin/hello-go
+	bin/hello-go-windows-amd64.exe
+
+	bin/hello-go-windows-amd64.exe earth

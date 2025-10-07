@@ -11,10 +11,13 @@ import (
 )
 
 func main() {
-	if len(os.Args) < 2 {
-		fmt.Println("Usage: hello-go <name>")
+	if len(os.Args) > 2 {
+		fmt.Println("Usage: hello-go [name]")
 		return
 	}
-	name := os.Args[1]
+	name := "world!"
+	if len(os.Args) == 2 {
+		name = os.Args[1]
+	}
 	fmt.Println(message.GetMessage(name))
 }
